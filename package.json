@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --aot --outputHashing=all && echo '/* /index.html 200' > dist/cryptobank/_redirects",
+    "prebuild": "rm -rf dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
