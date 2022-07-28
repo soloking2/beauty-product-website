@@ -1,0 +1,55 @@
+.product {
+  // background: rgb(255, 253, 254);
+  //   background: linear-gradient(20deg, rgba(255, 253, 254, 1) 0%, rgba(255, 253, 254, 1) 0%, rgba(255, 238, 232, 1) 100%);
+  background: rgb(255, 253, 254);
+    background: linear-gradient(184deg, rgba(255, 253, 254, 1) 0%, rgba(255, 253, 254, 1) 55%, rgba(255, 229, 222, 1) 100%);
+}
+
+blockquote {
+  padding-top: 1px;
+  padding-bottom: 30px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: open-quote;
+    font-size: 8.8rem;
+    line-height: 4.8rem;
+    margin-top: -60px;
+    color: #F6866A;
+  }
+}
+
+.testimonial {
+  background: url('/assets/images/w-11.png');
+  background-repeat: no-repeat;
+  background-position: bottom -60px right -20px;
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both 1s;
+  animation: rotate-center 0.6s ease-in-out both 1s;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

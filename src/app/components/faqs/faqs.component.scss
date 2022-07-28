@@ -1,0 +1,10 @@
+hr{
+  border: 0.4px solid #d1c4c1;
+  width: 424px;
+}
+
+hr:not(:first-of-type) {
+  margin-top: 30px;
+  border: 0.5px solid #d1c4c1;
+}
+

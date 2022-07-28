@@ -1,0 +1,38 @@
+<section class="pt-36 flex flex-row gap-x-20 px-16">
+  <div class="flex  wow" [ngClass]="'animate__zoomIn'"  data-wow-duration="4s" data-wow-delay="0.8s">
+    <img src="assets/images/w-9.png" alt="" class="w-full h-[90%]">
+  </div>
+  <div class="flex flex-col w-6/12 wow" [ngClass]="'animate__slideInUp'"  data-wow-duration="4s" data-wow-delay="0.6s">
+    <h3 class=" text-6xl font-['Alegreya'] pb-12 text-[#181738] pt-10">You have <span
+        class="text-[#F2683F]">questions,</span> we have answers.</h3>
+        <hr>
+
+        <div class="flex flex-col pt-6 w-[424px]">
+      <div class="flex justify-between text-[#14122C] font-bold">
+        <p>Where are products made?</p>
+        <span (click)="first = !first" class="cursor-pointer"><i class="fa" [ngClass]="{'fa-plus': !first, 'fa-minus': first}" aria-hidden="true"></i></span>
+      </div>
+      <p class="text-base pt-5" *ngIf="first">Many brands, especially in period care, carry products that take centuries to
+        biodegrade with pronounce.</p>
+      </div>
+      <hr>
+    <div class="flex flex-col pt-6 w-[424px]">
+      <div class="flex justify-between text-[#14122C] font-bold">
+        <p>How to Purchase our product?</p>
+        <span (click)="second = !second" class="cursor-pointer"><i class="fa" [ngClass]="{'fa-plus': !second, 'fa-minus': second}" aria-hidden="true"></i></span>
+      </div>
+      <p class="text-base pt-5" *ngIf="second">Many brands, especially in period care, carry products that take centuries to
+        biodegrade with pronounce.</p>
+      </div>
+      <hr>
+    <div class="flex flex-col pt-6 w-[424px]">
+      <div class="flex justify-between text-[#14122C] font-bold">
+        <p>How to purchase our product?</p>
+        <span (click)="third = !third" class="cursor-pointer"><i class="fa" [ngClass]="{'fa-plus': !third, 'fa-minus': third}" aria-hidden="true"></i></span>
+      </div>
+      <p class="text-base pt-5" *ngIf="third">Many brands, especially in period care, carry products that take centuries to
+        biodegrade with pronounce.</p>
+      </div>
+      <hr>
+  </div>
+</section>

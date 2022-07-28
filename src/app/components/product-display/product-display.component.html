@@ -1,0 +1,64 @@
+<section class="px-8 lg:px-16 pt-20">
+  <div class="grid grid-cols-3 gap-x-6">
+    <div class="col-span-1">
+      <div class="flex flex-col px-10 pb-11 wow" [ngClass]="'animate__slideInUp'"  data-wow-duration="4s" data-wow-delay="0.8s">
+        <p class="text-4xl text-[#1C1B3E] font-['Alegreya'] leading-snug font-normal">Trending On <span
+            class="text-[#F4693C]">Essentials</span></p>
+        <p class="pt-5 text-sm w-72 pb-6">Made with nature's best ingredients - Our products' transparent ingredient.
+          Fear of God Esentials.</p>
+
+        <button
+          class="border rounded-3xl border-[#C78068] bg-white w-9/12 text-sm text-[#C78068] py-2 font-bold shadow-sm">Browse
+          All Products <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span></button>
+      </div>
+
+    </div>
+    <div class="col-span-1 wow" [ngClass]="'animate__slideInRight'"  data-wow-duration="4s" data-wow-delay="0.9s">
+      <div class="flex flex-col">
+        <div class="bg-white flex justify-center items-center">
+          <img src="assets/images/w-18.png" alt="cosmetics-1" class="py-2">
+        </div>
+        <div class="flex flex-col text-center pt-8 pb-4">
+          <p class="font-['Alegreya'] text-lg text-[#312F4C] font-bold">Shower Butter</p>
+          <p class="text-[#727172] font-semibold text-base">$190.99</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-span-1 wow" [ngClass]="'animate__slideInRight'"  data-wow-duration="4s" data-wow-delay="0.9s">
+      <div class="flex flex-col">
+        <div class="bg-white flex justify-center items-center py-2 relative">
+          <img src="assets/images/w-19.png" alt="cosmetics-1">
+          <div class="absolute bottom-6 right-4 flex flex-col gap-y-3">
+            <div class="bg-[#F5683C] rounded-full w-9 h-9 flex justify-center items-center text-white">
+              <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+            </div>
+            <div
+              class="border-[1.5px] border-[#DB9985] bg-white rounded-full w-9 h-9 flex justify-center items-center text-[#DB9985]">
+              <span class="fa fa-heart-o" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-center pt-8 pb-4">
+          <p class="text-[#312F4C] font-bold text-base font-['Alegreya']">Luxury Oil Gel</p>
+          <p class="text-[#727172] font-semibold text-base">$190.99</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="grid grid-cols-3 gap-x-6 mb-28 mt-4">
+    <div class="col-span-1 wow" [ngClass]="'animate__slideInRight'"  data-wow-duration="4s" data-wow-delay="1s" *ngFor="let p of products">
+      <div class="flex flex-col">
+        <div class="bg-white flex justify-center items-center">
+          <img [src]="p.image" [alt]="p.name" class="py-2">
+        </div>
+        <div class="flex flex-col text-center pt-8 pb-4">
+          <p class="font-['Alegreya'] text-lg text-[#312F4C] font-bold">{{p.name}}</p>
+          <p class="text-[#727172] font-semibold text-base">{{p.price}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
